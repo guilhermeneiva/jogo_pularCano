@@ -1,0 +1,32 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.game-board {
+  position: relative;
+  border: 1px solid black;
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.cano {
+  position: absolute;
+  width: 80px;
+  bottom: 0;
+  animation: movimento-cano 2s infinite linear;
+}
+
+@keyframes movimento-cano {
+  from {
+    right: -80px;
+  }
+
+  to {
+    right: 100%;
+  }
+
+}
