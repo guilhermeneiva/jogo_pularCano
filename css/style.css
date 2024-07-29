@@ -6,11 +6,13 @@
 
 .game-board {
   position: relative;
-  border: 1px solid black;
+  border-bottom: 15px solid #138E0C;
   height: 500px;
-  width: 80%;
+  width: 100vw;
+
   margin: 0 auto;
   overflow: hidden;
+  background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
 .cano {
@@ -27,8 +29,14 @@
   bottom: 0;
 }
 
-.jump {
-  animation: jump 500ms ease-out;
+.pulo {
+  animation: pulo 500ms ease-out;
+}
+
+.nuvens {
+  position: absolute;
+  width: 550px;
+  animation: movimento-nuvens 20s infinite linear;
 }
 
 @keyframes movimento-cano {
@@ -42,7 +50,7 @@
 
 }
 
-@keyframes jump {
+@keyframes pulo {
   0% {
     bottom: 0;
   }
@@ -61,5 +69,15 @@
 
   100% {
     bottom: 0;
+  }
+}
+
+@keyframes movimento-nuvens {
+  from {
+    right: -450px;
+  }
+
+  to {
+    right: 100%;
   }
 }
