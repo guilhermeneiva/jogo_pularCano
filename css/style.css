@@ -9,15 +9,16 @@
   border: 1px solid black;
   height: 500px;
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
   overflow: hidden;
 }
 
 .cano {
-  position: absolute;
   width: 80px;
+  height: 80px;
+  position: absolute;
   bottom: 0;
-  animation: movimento-cano 2s infinite linear;
+  animation: movimento-cano 1.5s infinite linear;
 }
 
 .mario {
