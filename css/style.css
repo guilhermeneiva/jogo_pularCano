@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'super_mario_bros';
+  src: url(/fontes/Super\ Mario\ Bros..ttf) format(truetype);
+}
+
 .game-board {
   position: relative;
   border-bottom: 15px solid #138E0C;
@@ -37,6 +42,14 @@
   position: absolute;
   width: 550px;
   animation: movimento-nuvens 20s infinite linear;
+}
+
+.pontuacao {
+  position: absolute;
+  font-family: 'super_mario_bros';
+  font-size: 50px;
+  padding: 10px;
+  font-weight: bold;
 }
 
 @keyframes movimento-cano {

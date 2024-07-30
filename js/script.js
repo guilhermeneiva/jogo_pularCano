@@ -1,13 +1,18 @@
 const mario = document.querySelector('.mario')
 const cano = document.querySelector('.cano')
 const nuvens = document.querySelector('.nuvens')
+const pontuacao = document.querySelector('.pontuacao')
+
+let pontuacaoSegundos = 0;
 
 function pulo() {
+
   mario.classList.add('pulo')
 
   setTimeout(() => {
     mario.classList.remove('pulo')
   }, 500);
+
 }
 
 const loop = setInterval(() => {
@@ -34,11 +39,17 @@ const loop = setInterval(() => {
     nuvens.style.right = `${posicaoNuvens}px`
 
     clearInterval(loop)
+  } else {
+    pontuacaoSegundos++
+    pontuacao.innerHTML = pontuacaoSegundos
   }
+
+
 
 }, 10);
 
 
 
 document.addEventListener('keydown', pulo)
+
 
