@@ -60,7 +60,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #860102;
+  background-color: #860101;
   border-radius: 15px;
   color: white;
 }
@@ -77,7 +77,7 @@
   text-align: center;
   font-family: 'super_mario_bros';
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 #mostrarPontos {
@@ -85,7 +85,6 @@
   padding: 25px;
   font-family: 'super_mario_bros';
   font-size: 30px;
-  font-weight: bold;
 }
 
 .telaGameOver button {
@@ -93,8 +92,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 150%);
+  transform: translate(-50%, 180%);
   border-radius: 10px;
+  border: 0;
+  color: #860101;
+  font-family: 'super_mario_bros';
+  font-size: 20px;
+  font-weight: 300;
 }
 
 @keyframes movimento-cano {
