@@ -2,6 +2,7 @@ const mario = document.querySelector('.mario')
 const cano = document.querySelector('.cano')
 const nuvens = document.querySelector('.nuvens')
 const pontuacao = document.querySelector('.pontuacao')
+const gameOver = document.querySelector('.telaGameOver')
 
 let pontuacaoSegundos = 0;
 
@@ -38,17 +39,21 @@ const loop = setInterval(() => {
     nuvens.style.animation = 'none'
     nuvens.style.right = `${posicaoNuvens}px`
 
+    gameOver.style.display = 'block'
+
     clearInterval(loop)
+
   } else {
     pontuacaoSegundos++
     pontuacao.innerHTML = pontuacaoSegundos
+    document.getElementById('mostrarPontos').innerHTML = pontuacaoSegundos
   }
-
-
 
 }, 10);
 
-
+function reniciarJogo() {
+  location.reload()
+}
 
 document.addEventListener('keydown', pulo)
 
