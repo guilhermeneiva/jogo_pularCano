@@ -55,6 +55,8 @@ function reniciarJogo() {
   location.reload()
 }
 
+
+  
 document.addEventListener('keydown', pulo)
 
 
